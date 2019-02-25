@@ -39,7 +39,7 @@ $(function(){
     //listen for click event, check button edition
     $('.shopping-list').on('click', '.shopping-item-toggle', function(event) {
         //finds the closest <li> and toggles it so it's crossed out. 
-        //question: i did this exact thing but as ".shopping-item__checked" initially because it's a class in the html but it didn't work until after I remoed the ".", not sure why. is it something to do with it being the second class for the element?
+        //question: i did this exact thing but as ".shopping-item__checked" initially because it's a class in the html but it didn't work until after I removed the ".", not sure why. is it something to do with it being the second class for the element?
         $(this).closest('li').find('.shopping-item').toggleClass('shopping-item__checked');
     });
 })
